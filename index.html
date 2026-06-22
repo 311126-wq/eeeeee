@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>背單字練習</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="app">
+    <header>
+      <h1>背單字練習</h1>
+      <p>練習英文單字與中文意思，系統會記錄答題進度。</p>
+    </header>
+
+    <section class="card">
+      <div class="prompt-box">
+        <div class="label">提示</div>
+        <div class="prompt" id="prompt">請按「下一題」開始練習。</div>
+      </div>
+
+      <div class="input-group">
+        <input type="text" id="guessInput" placeholder="輸入你的答案" autocomplete="off" />
+        <button id="checkBtn">檢查答案</button>
+      </div>
+
+      <div class="controls">
+        <button id="prevBtn">上一題</button>
+        <button id="showAnswerBtn">顯示答案</button>
+        <button id="nextBtn">下一題</button>
+      </div>
+
+      <div class="result" id="result"></div>
+
+      <div class="stats" id="stats"></div>
+    </section>
+
+    <section class="settings">
+      <h2>設定</h2>
+      <label><input type="checkbox" id="reverseMode" /> 以英文提示中文</label>
+      <label><input type="checkbox" id="autoNext" /> 答對後自動下一題</label>
+      <button id="resetBtn">重設進度</button>
+    </section>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
